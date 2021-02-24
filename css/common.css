@@ -150,14 +150,20 @@ body {
   fill: currentColor;
 }
 
-.mail:hover {
+.mail:hover,
+.mail:focus,
+.mail:active {
   color: var(--accent-icon);
 }
 
-.tel:hover {
+.tel:hover,
+.tel:focus,
+.tel:active {
   color: var(--accent-icon);
 }
-.button-icon:hover {
+.button-icon:hover,
+.button-icon:focus,
+.button-icon:active {
   color: var(--accent-icon);
 }
 
@@ -283,9 +289,13 @@ img {
   margin: auto;
 }
 
-.social-links-icon {
+.social-links li:not(:first-child) {
+  margin-left: 10px;
+}
+
+.social-links-icon-footer {
   background: rgba(255, 255, 255, 0.1);
-  color: var(--grey-icon);
+  color: var(--white-text);
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -294,15 +304,13 @@ img {
   display: flex;
 }
 
-.social-links li:not(:first-child) {
-  margin-left: 10px;
-}
-
-.social-links-icon svg {
+.social-links-icon-footer svg {
   fill: currentColor;
 }
 
-.social-links-icon:hover {
+.social-links-icon-footer:hover,
+.social-links-icon-footer:focus,
+.social-links-icon-footer:active {
   color: var(--white-text);
   background-color: var(--accent-icon);
 }
