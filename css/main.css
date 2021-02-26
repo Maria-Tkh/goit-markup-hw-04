@@ -286,10 +286,14 @@
   fill: currentColor;
 }
 
-.client-link-icon:hover svg {
+.client-link-icon:hover svg,
+.client-link-icon:focus svg,
+.client-link-icon:active svg {
   fill: var(--accent-icon);
 }
 
-.client-link-icon:hover {
+.client-link-icon:hover,
+.client-link-icon:focus,
+.client-link-icon:active {
   border-color: var(--accent-icon);
 }
